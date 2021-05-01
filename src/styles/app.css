@@ -9,10 +9,8 @@ Document
 Use a better box model (opinionated).
 */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 /**
@@ -20,8 +18,8 @@ Use a more readable tab size (opinionated).
 */
 
 :root {
-  -moz-tab-size: 4;
-  tab-size: 4;
+    -moz-tab-size: 4;
+    tab-size: 4;
 }
 
 /**
@@ -30,8 +28,10 @@ Use a more readable tab size (opinionated).
 */
 
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
 }
 
 /*
@@ -44,7 +44,7 @@ Remove the margin in all browsers.
 */
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 /**
@@ -52,16 +52,8 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-  font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
+    font-family: system-ui, -apple-system, /* Firefox supports this but not yet `system-ui` */
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 /*
@@ -75,8 +67,10 @@ Grouping content
 */
 
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
+    height: 0;
+    /* 1 */
+    color: inherit;
+    /* 2 */
 }
 
 /*
@@ -89,16 +83,15 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr[title] {
-  text-decoration: underline dotted;
+    text-decoration: underline dotted;
 }
 
 /**
 Add the correct font weight in Edge and Safari.
 */
 
-b,
-strong {
-  font-weight: bolder;
+b, strong {
+    font-weight: bolder;
 }
 
 /**
@@ -106,18 +99,11 @@ strong {
 2. Correct the odd 'em' font sizing in all browsers.
 */
 
-code,
-kbd,
-samp,
-pre {
-  font-family:
-		ui-monospace,
-		SFMono-Regular,
-		Consolas,
-		'Liberation Mono',
-		Menlo,
-		monospace; /* 1 */
-  font-size: 1em; /* 2 */
+code, kbd, samp, pre {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
 }
 
 /**
@@ -125,27 +111,26 @@ Add the correct font size in all browsers.
 */
 
 small {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 /**
 Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
 */
 
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sub {
-  bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 sup {
-  top: -0.5em;
+    top: -0.5em;
 }
 
 /*
@@ -159,8 +144,10 @@ Tabular data
 */
 
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
+    text-indent: 0;
+    /* 1 */
+    border-color: inherit;
+    /* 2 */
 }
 
 /*
@@ -173,15 +160,15 @@ Forms
 2. Remove the margin in Firefox and Safari.
 */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
 }
 
 /**
@@ -189,19 +176,17 @@ Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
 */
 
-button,
-select { /* 1 */
-  text-transform: none;
+button, select {
+    /* 1 */
+    text-transform: none;
 }
 
 /**
 Correct the inability to style clickable types in iOS and Safari.
 */
 
-button,
-[type='button'],
-[type='submit'] {
-  -webkit-appearance: button;
+button, [type='button'], [type='submit'] {
+    -webkit-appearance: button;
 }
 
 /**
@@ -222,7 +207,7 @@ Remove the padding so developers are not caught out when they zero out 'fieldset
 */
 
 legend {
-  padding: 0;
+    padding: 0;
 }
 
 /**
@@ -230,7 +215,7 @@ Add the correct vertical alignment in Chrome and Firefox.
 */
 
 progress {
-  vertical-align: baseline;
+    vertical-align: baseline;
 }
 
 /**
@@ -261,7 +246,7 @@ Add the correct display in Chrome and Safari.
 */
 
 summary {
-  display: list-item;
+    display: list-item;
 }
 
 /**
@@ -274,25 +259,13 @@ summary {
  * Removes the default spacing and border for appropriate elements.
  */
 
-blockquote,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-figure,
-p,
-pre {
-  margin: 0;
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
 }
 
 button {
-  background-color: transparent;
-  background-image: none;
+    background-color: transparent;
+    background-image: none;
 }
 
 /**
@@ -301,20 +274,19 @@ button {
  */
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 fieldset {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-ol,
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /**
@@ -329,8 +301,10 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
-  line-height: 1.5; /* 2 */
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* 1 */
+    line-height: 1.5;
+    /* 2 */
 }
 
 /**
@@ -339,8 +313,8 @@ html {
  */
 
 body {
-  font-family: inherit;
-  line-height: inherit;
+    font-family: inherit;
+    line-height: inherit;
 }
 
 /**
@@ -369,13 +343,15 @@ body {
  *    https://github.com/tailwindcss/tailwindcss/pull/116
  */
 
-*,
-::before,
-::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
+*, ::before, ::after {
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-style: solid;
+    /* 2 */
+    border-color: currentColor;
+    /* 2 */
 }
 
 /*
@@ -383,7 +359,7 @@ body {
  */
 
 hr {
-  border-top-width: 1px;
+    border-top-width: 1px;
 }
 
 /**
@@ -397,34 +373,28 @@ hr {
  */
 
 img {
-  border-style: solid;
+    border-style: solid;
 }
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: #a1a1aa;
+input::placeholder, textarea::placeholder {
+    color: #a1a1aa;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 /**
@@ -433,8 +403,8 @@ h6 {
  */
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 /**
@@ -445,14 +415,10 @@ a {
  * normalize.css.
  */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
+button, input, optgroup, select, textarea {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
 }
 
 /**
@@ -462,11 +428,8 @@ textarea {
  * 'mono' font family.
  */
 
-pre,
-code,
-kbd,
-samp {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+pre, code, kbd, samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -477,16 +440,9 @@ samp {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-  display: block;
-  vertical-align: middle;
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
 }
 
 /**
@@ -496,511 +452,506 @@ object {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
-video {
-  max-width: 100%;
-  height: auto;
+img, video {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+    .container {
+        max-width: 640px;
+    }
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+    .container {
+        max-width: 768px;
+    }
 }
 
 @media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+    .container {
+        max-width: 1024px;
+    }
 }
 
 @media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+    .container {
+        max-width: 1280px;
+    }
 }
 
 @media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+    .container {
+        max-width: 1536px;
+    }
 }
 
 .bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .bg-blue-medium {
-  --tw-bg-opacity: 1;
-  background-color: rgba(0, 92, 152, var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 92, 152, var(--tw-bg-opacity));
 }
 
 .bg-black-faded {
-  background-color: #00000059;
+    background-color: #00000059;
 }
 
 .bg-gray-background {
-  --tw-bg-opacity: 1;
-  background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
 }
 
 .border-gray-primary {
-  --tw-border-opacity: 1;
-  border-color: rgba(219, 219, 219, var(--tw-border-opacity));
+    --tw-border-opacity: 1;
+    border-color: rgba(219, 219, 219, var(--tw-border-opacity));
 }
 
 .rounded {
-  border-radius: 0.25rem;
+    border-radius: 0.25rem;
 }
 
 .rounded-full {
-  border-radius: 9999px;
+    border-radius: 9999px;
 }
 
 .border {
-  border-width: 1px;
+    border-width: 1px;
 }
 
 .border-t {
-  border-top-width: 1px;
+    border-top-width: 1px;
 }
 
 .border-b {
-  border-bottom-width: 1px;
+    border-bottom-width: 1px;
 }
 
 .cursor-pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
 .table {
-  display: table;
+    display: table;
 }
 
 .grid {
-  display: grid;
+    display: grid;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .group:hover .group-hover\:flex {
-  display: flex;
+    display: flex;
 }
 
 .flex-row {
-  flex-direction: row;
+    flex-direction: row;
 }
 
 .flex-col {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .items-center {
-  align-items: center;
+    align-items: center;
 }
 
 .justify-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 .justify-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .justify-evenly {
-  justify-content: space-evenly;
+    justify-content: space-evenly;
 }
 
 .font-medium {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .font-bold {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .h-2 {
-  height: 0.5rem;
+    height: 0.5rem;
 }
 
 .h-4 {
-  height: 1rem;
+    height: 1rem;
 }
 
 .h-8 {
-  height: 2rem;
+    height: 2rem;
 }
 
 .h-16 {
-  height: 4rem;
+    height: 4rem;
 }
 
 .h-40 {
-  height: 10rem;
+    height: 10rem;
 }
 
 .h-full {
-  height: 100%;
+    height: 100%;
 }
 
 .h-screen {
-  height: 100vh;
+    height: 100vh;
 }
 
 .text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
 
 .text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }
 
 .text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mr-1 {
-  margin-right: 0.25rem;
+    margin-right: 0.25rem;
 }
 
 .mb-1 {
-  margin-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 .mt-2 {
-  margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .mb-2 {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .mr-3 {
-  margin-right: 0.75rem;
+    margin-right: 0.75rem;
 }
 
 .mt-4 {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .mr-4 {
-  margin-right: 1rem;
+    margin-right: 1rem;
 }
 
 .mb-4 {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .mt-5 {
-  margin-top: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .mb-5 {
-  margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .mr-6 {
-  margin-right: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .mb-6 {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .mb-8 {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .mr-10 {
-  margin-right: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .mt-12 {
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 
 .mb-12 {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .max-w-screen-md {
-  max-width: 768px;
+    max-width: 768px;
 }
 
 .max-w-screen-lg {
-  max-width: 1024px;
+    max-width: 1024px;
 }
 
 .opacity-25 {
-  opacity: 0.25;
+    opacity: 0.25;
 }
 
 .opacity-50 {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .p-4 {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .pb-0 {
-  padding-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .pl-0 {
-  padding-left: 0px;
+    padding-left: 0px;
 }
 
 .pt-1 {
-  padding-top: 0.25rem;
+    padding-top: 0.25rem;
 }
 
 .pt-2 {
-  padding-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .pt-4 {
-  padding-top: 1rem;
+    padding-top: 1rem;
 }
 
 .pb-4 {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .pr-5 {
-  padding-right: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .absolute {
-  position: absolute;
+    position: absolute;
 }
 
 .relative {
-  position: relative;
+    position: relative;
 }
 
 .bottom-0 {
-  bottom: 0px;
+    bottom: 0px;
 }
 
 .left-0 {
-  left: 0px;
+    left: 0px;
 }
 
 * {
-  --tw-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
 }
 
 * {
-  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgba(59, 130, 246, 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
+    --tw-ring-inset: var(--tw-empty, /*!*/
+    /*!*/
+    );
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
 }
 
 .fill-red {
-  fill: #ed4956;
+    fill: #ed4956;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .text-white {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .text-blue-medium {
-  --tw-text-opacity: 1;
-  color: rgba(0, 92, 152, var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(0, 92, 152, var(--tw-text-opacity));
 }
 
 .text-black-light {
-  --tw-text-opacity: 1;
-  color: rgba(38, 38, 38, var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(38, 38, 38, var(--tw-text-opacity));
 }
 
 .text-gray-base {
-  --tw-text-opacity: 1;
-  color: rgba(97, 97, 97, var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(97, 97, 97, var(--tw-text-opacity));
 }
 
 .text-red-primary {
-  --tw-text-opacity: 1;
-  color: rgba(237, 73, 86, var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(237, 73, 86, var(--tw-text-opacity));
 }
 
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .select-none {
-  -webkit-user-select: none;
-          user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .w-8 {
-  width: 2rem;
+    width: 2rem;
 }
 
 .w-16 {
-  width: 4rem;
+    width: 4rem;
 }
 
 .w-20 {
-  width: 5rem;
+    width: 5rem;
 }
 
 .w-40 {
-  width: 10rem;
+    width: 10rem;
 }
 
 .w-2\/5 {
-  width: 40%;
+    width: 40%;
 }
 
 .w-3\/5 {
-  width: 60%;
+    width: 60%;
 }
 
 .w-6\/12 {
-  width: 50%;
+    width: 50%;
 }
 
 .w-full {
-  width: 100%;
+    width: 100%;
 }
 
 .z-10 {
-  z-index: 10;
+    z-index: 10;
 }
 
 .gap-4 {
-  gap: 1rem;
+    gap: 1rem;
 }
 
 .gap-5 {
-  gap: 1.25rem;
+    gap: 1.25rem;
 }
 
 .gap-8 {
-  gap: 2rem;
+    gap: 2rem;
 }
 
 .grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .col-span-1 {
-  grid-column: span 1 / span 1;
+    grid-column: span 1 / span 1;
 }
 
 .col-span-2 {
-  grid-column: span 2 / span 2;
+    grid-column: span 2 / span 2;
 }
 
 .col-span-3 {
-  grid-column: span 3 / span 3;
+    grid-column: span 3 / span 3;
 }
 
 .col-span-4 {
-  grid-column: span 4 / span 4;
+    grid-column: span 4 / span 4;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
 
 @keyframes pulse {
-  50% {
-    opacity: .5;
-  }
+    50% {
+        opacity: .5;
+    }
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
 }
 
-@media (min-width: 640px) {
-}
+@media (min-width: 640px) {}
 
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 1024px) {
-}
+@media (min-width: 1024px) {}
 
-@media (min-width: 1280px) {
-}
+@media (min-width: 1280px) {}
 
-@media (min-width: 1536px) {
-}
+@media (min-width: 1536px) {}
